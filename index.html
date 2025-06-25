@@ -1,27 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Presentation & CV</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Brief presentation about yourself, your research interests, etc.</p>
-    </header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Matteo Gardini</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/matteo_gardini.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#links">Documents</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    <style>
+        .tag-icons {
+            display: inline-flex; 
+            align-items: center; 
+            margin-bottom: 20px; 
+        }
+        .tag-icons i {
+            margin-right: 10px; 
+        }
+        .custom-icon {
+            width: 1.2em; 
+            height: 1.2em;
+            fill: gray; 
+            margin-right: 10px; 
+        }
+    </style>
 
-    <section>
-        <h2>Curriculum Vitae</h2>
-        <p><a href="pdfs/CV.pdf" target="_blank">Download/View my CV (PDF)</a></p>
-    </section>
 
-    <section>
-        <h2>Mathematical Finance Papers</h2>
-        <ul>
-            <li><a href="pdf/approximation_levy_by_compound_poisson_process.pdf" target="_blank">Approximation of Lévy processes with compound poisson</a></li>
-        </ul>
-    </section>
-</body>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Matteo
+                        <span class="text-primary">Gardini</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Salita di Santa Brigida · Genova, GE 16126 ·
+                        <a href="mailto:name@email.com">matteo.gardini88@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">Ph.D. Quantitative Researcher with 10+ years of experience in energy markets, specializing in stochastic modeling and derivatives pricing. Played a key role in building quantitative teams at Eni Plenitude and ERG. Passionate about mathematics, programming and innovation in energy finance.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/matteogardini88/?locale=en_US"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/MatteoGardini1988"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Quantitative Researcher</h3>
+                            <div class="subheading mb-3">Eni Plenitude S.p.A.</div>
+                            <p><ul>
+                                <li>European power and gas forward curves construction ensuring compliance with non-arbitrage constraints.</li>
+                                <li>Developed a Python pricing library, improving pricing efficiency and enabling advanced simulations for energy derivatives:
+                                    <ul style="list-style-type: square;">
+                                        <li>Two-factor model and the Schwartz-Smith model.</li>
+                                        <li>Stochastic model with double exponential jumps for energy spot prices.</li>
+                                        <li>Heath-Jarrow-Morton framework for energy markets.</li>
+                                    </ul>
+                                </li>
+                                <li>Stochastic models for renewable production simulation.</li>
+                                <li>Energy derivatives pricing: swing, gas storage, American and European vanilla options, virtual power plants and weather contracts.</li>
+                                <li>Power Purchase Agreements (PPAs) evaluation.</li>
+                            </ul></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">December 2021 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Quantitative Analyst</h3>
+                            <div class="subheading mb-3">ERG S.p.A.</div>
+                            <p>
+                                <ul>
+                                    <li>Lévy processes derivative pricing: Black76, Variance Gamma, Merton Jump-Diffusion and Normal Inverse Gaussian: Monte Carlo Simulations.</li>
+                                    <li>Risk metrics computation: Par, VaR, CVaR, and greeks under a HJM framework of large portfolios of financial deals and physical assets.</li>
+                                    <li>Grafical User Intrerface (GUI) for derivatives valuation.</li>
+                                    <li>Hull-White model for the Euribor rate: historical calibration and Monte Carlo simulations.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2017 - December 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Quantitative Analyst</h3>
+                            <div class="subheading mb-3">a2a Trading</div>
+                            <p>
+                                <ul>
+                                    <li>Developed an MILP optimization model to determine the optimal dispatching strategy for the hydroelectric facilities.</li>
+                                    <li>Matlab implementation with GUI of the Euphemia algorithm adapted to the Italian power spot market.</li>
+                                    <li>Update of different non-linear optimization models necessary to define a medium/long term production strategy of the hydroelectric assets.</li>
+                                    <li> Italian energy market players cluster analysis based on a k-mean algorithm in order to assess typical bidding strategies of the competitors.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2014 - January 2017</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">PhD - Applied Mathematics</h3>
+                            <div class="subheading mb-3">Università degli studi di Genova</div>
+                            <div>Multidimensional Lévy processes in Finance</div>
+                            <p>
+                                <a href="pdf/phdunige_S4606682.pdf" target="_blank">Thesis: Financial models in continuous time with self-decomposability: application to the pricing of energy derivatives.</a>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">November 2018 - March 2022</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">MS - Mathematical Engineering: Quantitative Finance</h3>
+                            <div class="subheading mb-3">Politecnico di Milano</div>
+                                <p>
+                                <a href="pdf/master_thesis.pdf" target="_blank">Thesis: Option pricing in regime swithcing.</a>
+                            </p>
+                        </div>
+                    <div class="flex-shrink-0"><span class="text-primary">February 2011 - December 2013</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">BS - Mathematical Engineering</h3>
+                            <div class="subheading mb-3">Politecnico di Milano</div>
+                            <p>Thesis: Infinitely divisible matrices</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2007 - February 2011</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Teaching Experiences-->
+            <section class="resume-section" id="teaching">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Teaching Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Adjunt professor: Advance Mathematical Methods in Finance</h3>
+                            <div class="subheading mb-3">Politecnico di Milano - Department of Mathematics</div>
+                            <div>Portfolio theory, Binomial trees, option pricing with Python under Black76 model, Swap Curve Construction.</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">February 2024 - present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Adjunt professor: Computational Finance</h3>
+                            <div class="subheading mb-3">Università di Genova - Department of Mathematics</div>
+                                <div>Stochastic calculus, Brownian motion, Black-Scholes model, Lévy processes, derivatives pricing by PDE approach, Monte Carlo techniques and Fourier methods.</div>
+                        </div>
+                    <div class="flex-shrink-0"><span class="text-primary">February 2023 - June 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Adjunt professor: Financial Engineering</h3>
+                            <div class="subheading mb-3">Politecnico di Milano</div>
+                            <div>Stochastic calculus, Brownian motion, Black-Scholes model, Lévy processes, European and American derivatives pricing by PDE approach, Monte Carlo techniques and Fourier methods.</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">February 2020 - June 2021</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <img class="custom-icon" src="assets/img/python.svg" alt="python Icon">
+                        <img class="custom-icon" src="assets/img/matlab.svg" alt="matlab Icon">
+                        <img class="custom-icon" src="assets/img/cplus.svg" alt="C++ Icon">
+                        <img class="custom-icon" src="assets/img/C.svg" alt="C Icon">
+                        <img class="custom-icon" src="assets/img/VBA.svg" alt="VBA Icon">
+                        <img class="custom-icon" src="assets/img/latex.svg" alt="Latex Icon">
+                        <img class="custom-icon" src="assets/img/github.svg" alt="Github Icon">
+                    </ul>
+            </section>
+            <hr class="m-0" />
+            <!-- Publications-->
+            <section class="resume-section" id="publications">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Publications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li style="margin-bottom: 20px;">
+                        <span class="fa-li"><i class="fa-solid fa-bars"></i></span>    
+                        <a href="https://doi.org/10.1007/s10203-021-00352-9" target="_blank" rel="noopener noreferrer">
+                            Correlating Lévy processes with self-decomposability: applications to energy markets (Decision in Economics and Finance, 2021)
+                        </a>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                        <span class="fa-li"><i class="fa-solid fa-bars"></i></span> 
+                        <a href="https://doi.org/10.1080/1350486X.2021.2010106" target="_blank" rel="noopener noreferrer">
+                            A bivariate normal inverse gaussian process with stochastic delay: efficient simulations and applications to energy markets (Applied Mathematical Finance, 2021)
+                        </a>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                        <span class="fa-li"><i class="fa-solid fa-bars"></i></span> 
+                        <a href="https://doi.org/10.1002/asmb.2666" target="_blank" rel="noopener noreferrer">
+                            The variance Gamma++ process and applications to energy markets (Applied stochastic models in business and industry, 2022)
+                        </a>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                        <span class="fa-li"><i class="fa-solid fa-bars"></i></span> 
+                        <a href="https://doi.org/10.1007/s10203-024-00484-8" target="_blank" rel="noopener noreferrer">
+                            A Heath–Jarrow–Morton framework for energy markets: review and applications for practitioners (Decisions in Economics and Finance, 2024)
+                        </a>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                        <span class="fa-li"><i class="fa-solid fa-bars"></i></span> 
+                        <a href="https://doi.org/10.1080/1350486X.2023.2248791" target="_blank" rel="noopener noreferrer">
+                            Exchange option pricing under variance gamma-like models (Applied Mathematical Finance, 2023)
+                        </a>
+                        </li>
+                    </ul>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>---</p>
+                    <p class="mb-0">---</p>
+                </div>
+            </section>
+        <hr class="m-0" />
+		<!-- Link-->
+            <section class="resume-section" id="links">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Documents</h2>
+                    <ul class="fa-ul mb-0">
+                        <li style="margin-bottom: 20px;">
+                            <span class="fa-li"><i class="fa-solid fa-book"></i></span>
+                            <a href="pdf/approximation_levy_by_compound_poisson_process.pdf" target="_blank">Approximation of Lévy processes with compound poisson</a>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <span class="fa-li"><i class="fa-solid fa-book"></i></span>
+                            <a href="pdf/series_representation.pdf" target="_blank">Series representation of Lévy processes</a>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <span class="fa-li"><i class="fa-solid fa-book"></i></span>
+                            <a href="pdf/pca.pdf" target="_blank">Principal Component Analysis</a>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <span class="fa-li"><i class="fa-solid fa-book"></i></span>
+                            <a href="pdf/mean_reverting_process_with_jumps.pdf" target="_blank">Mean reverting model with jumps</a>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <span class="fa-li"><i class="fa-solid fa-book"></i></span>
+                            <a href="pdf/notes_conditional_expectation.pdf" target="_blank">Notes on conditional expectation</a>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <span class="fa-li"><i class="fa-solid fa-book"></i></span>
+                            <a href="pdf/gbm_correlation.pdf" target="_blank">Covariance of geometrical Brownian motion</a>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <span class="fa-li"><i class="fa-solid fa-book"></i></span>
+                            <a href="pdf/Gardini_Sabino_Sasso_SD_Levy.pdf" target="_blank">Correlating Lévy processes with Self-Decomposability: Applications to Energy Markets</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
